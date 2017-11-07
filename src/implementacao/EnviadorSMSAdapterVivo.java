@@ -1,10 +1,10 @@
 package implementacao;
 
-public class SMSAdapterVivo implements EnviadorSMS {
+public class EnviadorSMSAdapterVivo implements EnviadorSMS {
 
 	private EnviadorSMSVivo enviadorSMSVivo;
 
-	public SMSAdapterVivo(EnviadorSMSVivo enviadorSMSVivo) {
+	public EnviadorSMSAdapterVivo(EnviadorSMSVivo enviadorSMSVivo) {
 		this.enviadorSMSVivo = enviadorSMSVivo;
 	}
 

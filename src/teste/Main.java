@@ -3,13 +3,13 @@ package teste;
 import implementacao.EnviadorSMS;
 import implementacao.EnviadorSMSVivoImpl;
 import implementacao.SMS;
-import implementacao.SMSAdapterVivo;
+import implementacao.EnviadorSMSAdapterVivo;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		
-		EnviadorSMS enviador = new SMSAdapterVivo(new EnviadorSMSVivoImpl());
+		EnviadorSMS enviador = new EnviadorSMSAdapterVivo(new EnviadorSMSVivoImpl());
 		
 		SMS sms = montarMensagem();
 		
